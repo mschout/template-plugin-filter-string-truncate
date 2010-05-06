@@ -21,7 +21,7 @@ elsif (-s 'SIGNATURE' == 0) {
     plan skip_all => "SIGNATURE file was empty";
 }
 elsif (!eval { require Socket; Socket::inet_aton('pgp.mit.edu') }) {
-    plan skip_all =>
+    plan skip_all =>
         "Cannot connect to the keyserver to check module signature";
 }
 else {
