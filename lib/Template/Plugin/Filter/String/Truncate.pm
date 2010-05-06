@@ -31,6 +31,13 @@ sub filter {
 
 __END__
 
+=begin Pod::Coverage
+
+filter
+init
+
+=end Pod::Coverage
+
 =head1 SYNOPSIS
 
  [% USE Filter.String.Truncate %]
@@ -46,6 +53,12 @@ __END__
  # middle elide
  [% 'This is your brain' | elide(16, truncate => 'middle') %]
  This is... brain
+
+ # block syntax
+ [% FILTER elide(16) -%]
+ This is your brain
+ [%- END %]
+ THis is your ...
 
 =head1 DESCRIPTION
 
