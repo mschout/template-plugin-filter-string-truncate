@@ -1,8 +1,5 @@
 package Template::Plugin::Filter::String::Truncate;
-BEGIN {
-  $Template::Plugin::Filter::String::Truncate::VERSION = '0.03';
-}
-
+$Template::Plugin::Filter::String::Truncate::VERSION = '0.03';
 # ABSTRACT: String::Truncate filter for Template::Toolkit
 
 use 5.006;
@@ -32,7 +29,7 @@ sub filter {
 
 1;
 
-
+__END__
 
 =pod
 
@@ -78,9 +75,19 @@ init
 
 L<String::Truncate>
 
+=head1 SOURCE
+
+The development version is on github at L<http://github.com/mschout/template-plugin-filter-string-truncate>
+and may be cloned from L<git://github.com/mschout/template-plugin-filter-string-truncate.git>
+
+=head1 BUGS
+
+Please report any bugs or feature requests to bug-template-plugin-filter-string-truncate@rt.cpan.org or through the web interface at:
+ http://rt.cpan.org/Public/Dist/Display.html?Name=Template-Plugin-Filter-String-Truncate
+
 =head1 AUTHOR
 
-  Michael Schout <mschout@cpan.org>
+Michael Schout <mschout@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
@@ -89,21 +96,4 @@ This software is copyright (c) 2010 by Michael Schout.
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
-=head1 SOURCE
-
-You can contribute or fork this project via github:
-
-http://github.com/mschout/template-plugin-filter-string-truncate
-
- git clone git://github.com/mschout/template-plugin-filter-string-truncate.git
-
-=head1 BUGS
-
-Please report any bugs or feature requests to bug-template-plugin-filter-string-truncate@rt.cpan.org or through the web interface at:
- http://rt.cpan.org/Public/Dist/Display.html?Name=Template-Plugin-Filter-String-Truncate
-
 =cut
-
-
-__END__
-
