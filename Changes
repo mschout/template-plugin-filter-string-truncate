@@ -1,4 +1,5 @@
 {{$NEXT}}
+    - remove Module::Signature requirement
 
 0.02  2010-05-06
     - add Changes file
